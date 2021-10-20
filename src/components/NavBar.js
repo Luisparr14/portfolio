@@ -5,12 +5,12 @@ export const NavBar = () => {
   return (
     <React.Fragment>
       <nav class="navbar">
-        <div>
+        <div className="navbar-nav">
           <label className="logo">Luis Angel</label>
+          <label id="collapse-button" className="navbar-toggler" type="button">
+            <i class="fas fa-bars"></i>
+          </label>
         </div>
-        <label id="collapse-button" className="navbar-toggler" type="button">
-          <i class="fas fa-bars"></i>
-        </label>
       </nav>
       <ul id="collapseNav" className="">
         <li><a href="#aboutme">About me</a></li>

@@ -1,16 +1,25 @@
 
 body {
     font-family: Roboto;
+    background-color: #F6D98D
 }
 
 .navbar {
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #F6D98D;
+    background-color: #F6D98D 0.6;
+    backdrop-filter: blur(3px);
     height: 50px;
     width: 100%;
     z-index: 100000;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 label.logo {
