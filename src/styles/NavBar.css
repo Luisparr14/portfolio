@@ -1,4 +1,3 @@
-
 body {
     font-family: Roboto;
     background-color: #F6D98D
@@ -15,8 +14,10 @@ body {
     width: 100%;
     z-index: 100000;
 }
-
-.navbar-nav{
+.expand-nav {
+    display: block;
+}
+.navbar-nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -58,6 +59,10 @@ ul li a {
     text-transform: uppercase;
 }
 
+.collapse-nav {
+    display: none;
+}
+
 @media (max-width:530px) {
     #collapse-button {
         font-size: 25px;
@@ -68,22 +73,26 @@ ul li a {
         left: 20px;
         display: block;
     }
-
+    .expand-nav {
+        display: none;
+    }
+    .collapse-nav {
+        display: block;
+    }
+    .no-collapse {
+        left: 50%;
+        transition: 0.2s;
+    }
     ul {
         background-color: #F6D98D;
         position: fixed;
-        top:0;
-        left:100%;
+        top: 0;
+        left: 100%;
         width: 50%;
         height: 100vh;
         text-align: center;
         text-transform: uppercase;
         transition: 0.2s;
-    }
-    .no-collapse {
-        left: 50%;
-        transition: 0.2s;
-        
     }
     ul li {
         display: block;
