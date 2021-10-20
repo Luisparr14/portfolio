@@ -1,0 +1,20 @@
+.project{
+  border-radius: 5px;
+  margin: auto ;
+  width: 80%;
+}
+.project img{
+  object-fit: contain;
+  width: 100%;
+}
+
+.project-title{
+  text-align: center;
+}
+
+.projects-container{
+  background-color: #F6D98D;
+}
+.projects-list{
+  margin: 10px 0 10px 0;
+}

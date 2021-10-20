@@ -1,0 +1,84 @@
+
+body {
+    font-family: Roboto;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6D98D;
+    height: 50px;
+    width: 100%;
+    z-index: 100000;
+}
+
+label.logo {
+    margin-left: 5px;
+    color: #000000;
+    font-size: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 50px;
+}
+
+#collapse-button {
+    display: none;
+}
+
+ul {
+    /* left: 200%; */
+    background-color: #F6D98D;
+    opacity: 1;
+    float: right;
+    flex-direction: column;
+    text-transform: uppercase;
+    z-index: 200000;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 50px;
+}
+
+ul li a {
+    color: #000;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+@media (max-width:530px) {
+    #collapse-button {
+        font-size: 25px;
+        line-height: 50px;
+        cursor: pointer;
+        margin-right: 10px;
+        float: right;
+        left: 20px;
+        display: block;
+    }
+
+    ul {
+        background-color: #F6D98D;
+        position: fixed;
+        top:0;
+        left:100%;
+        width: 50%;
+        height: 100vh;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.2s;
+    }
+    .no-collapse {
+        left: 50%;
+        transition: 0.2s;
+        
+    }
+    ul li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+}

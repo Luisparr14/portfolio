@@ -1,0 +1,30 @@
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 71px;
+  height: 60px;
+  margin: 10px 0 10px 0;
+}
+.skill label{
+  text-align: center;
+}
+.skill img{
+  height: 45px;
+  width: 71px;
+  object-fit: contain;
+}
+.skills-container{
+  background-color: #F6D98D;
+}
+.skills-list{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+@media (max-width:320px){
+  .skills-list{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
