@@ -17,6 +17,7 @@ body {
 }
 .expand-nav {
     display: block;
+    background-color: var(--primaryColor) 0.6;
 }
 .navbar-nav {
     display: flex;
@@ -100,4 +101,5 @@ ul li a {
         margin: 20px 0;
         line-height: 30px;
     }
+    
 }

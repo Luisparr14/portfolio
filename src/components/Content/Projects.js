@@ -1,6 +1,24 @@
 import { Project } from './Project'
-import EasyTask from '../assets/projects images/easy tasks.png'
+import EasyTask from '../../assets/projects images/easy tasks.png'
 const projects = [
+  {
+    name: 'Easy Tasks',
+    image: EasyTask,
+    repo: 'https://github.com/Luisparr14/tasks',
+    uri: 'https://easy-tasks-20217.firebaseapp.com/'
+  },
+  {
+    name: 'Easy Tasks',
+    image: EasyTask,
+    repo: 'https://github.com/Luisparr14/tasks',
+    uri: 'https://easy-tasks-20217.firebaseapp.com/'
+  },
+  {
+    name: 'Easy Tasks',
+    image: EasyTask,
+    repo: 'https://github.com/Luisparr14/tasks',
+    uri: 'https://easy-tasks-20217.firebaseapp.com/'
+  },
   {
     name: 'Easy Tasks',
     image: EasyTask,

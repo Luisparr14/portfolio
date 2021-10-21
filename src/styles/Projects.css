@@ -1,20 +1,61 @@
-.project{
-  border-radius: 5px;
-  margin: auto ;
+.project {
+  margin: auto;
   width: 80%;
 }
-.project img{
+
+.project img {
+  border-radius: 10px;
   object-fit: contain;
   width: 100%;
 }
 
-.project-title{
+.project-title {
   text-align: center;
 }
 
-.projects-container{
+.projects-container {
   background-color: var(--primaryColor);
 }
-.projects-list{
+
+.projects-list {
   margin: 10px 0 10px 0;
+}
+
+@media (min-width:662px) and (max-width:1200px) {
+  .project {
+    margin: 15px auto;
+    width: 80%;
+    height: auto;
+  }
+  .project-title {
+    text-align: center;
+  }
+  .projects-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px 0 10px 0;
+  }
+  .project img {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (min-width:1201px) {
+  .projects-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px 0 10px 0;
+  }
+  .project {
+    margin: 15px auto;
+    width: 80%;
+    height: auto;
+  }
+  .project img {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: contain;
+  }
 }

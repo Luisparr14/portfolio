@@ -3,11 +3,13 @@ import './styles/NavBar.css'
 import './styles/AboutMe.css'
 import './styles/Skills.css'
 import './styles/Projects.css'
-import { NavBar } from './components/NavBar';
+import './styles/Footer.css'
+import { NavBar } from './components/Header/NavBar';
 import React from 'react';
-import { AboutMe } from './components/AboutMe';
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
+import { AboutMe } from './components/Content/AboutMe';
+import { Skills } from './components/Content/Skills';
+import { Projects } from './components/Content/Projects';
+import { Footer } from './components/Footer/Footer'
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Projects />
+        <Footer />
       </div>
     </React.Fragment>
   );

@@ -3,10 +3,14 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
-.about-me p {
+.content-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-about p {
   margin: auto;
   width: 90%;
   text-align: left;
@@ -15,14 +19,46 @@
   color: #000000;
 }
 
-.about-me img {
+.content-about img {
   margin: 12px 0 14px 0;
   align-self: center;
-  width: 145px;
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
 }
 
-@media (max-width:530px) {
-  .about-me{
-    
+@media (min-width:530px) and (max-width:768px) {
+  .content-about {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-about img {
+    margin: 20px;
+    align-self: center;
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .content-about p {
+    padding: 10px;
+  }
+}
+
+@media (min-width:769px) {
+  .content-about {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-about img {
+    margin: 20px;
+    align-self: center;
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    transform: scaleX(-1);    
+  }
+  .content-about p {
+    display: inline-block;
+    padding: 0 30px;
   }
 }
