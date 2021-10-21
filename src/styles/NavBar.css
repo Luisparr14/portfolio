@@ -1,6 +1,7 @@
+
 body {
     font-family: Roboto;
-    background-color: #F6D98D
+    background-color: var(--primaryColor)
 }
 
 .navbar {
@@ -8,7 +9,7 @@ body {
     top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #F6D98D 0.6;
+    background-color: var(--primaryColor) 0.6;
     backdrop-filter: blur(3px);
     height: 50px;
     width: 100%;
@@ -38,7 +39,7 @@ label.logo {
 
 ul {
     /* left: 200%; */
-    background-color: #F6D98D;
+    background-color: var(--primaryColor);
     opacity: 1;
     float: right;
     flex-direction: column;
@@ -84,7 +85,7 @@ ul li a {
         transition: 0.2s;
     }
     ul {
-        background-color: #F6D98D;
+        background-color: var(--primaryColor);
         position: fixed;
         top: 0;
         left: 100%;

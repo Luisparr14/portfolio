@@ -13,7 +13,7 @@
 }
 
 .projects-container{
-  background-color: #F6D98D;
+  background-color: var(--primaryColor);
 }
 .projects-list{
   margin: 10px 0 10px 0;

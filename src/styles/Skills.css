@@ -15,7 +15,7 @@
   object-fit: contain;
 }
 .skills-container{
-  background-color: #F6D98D;
+  background-color: var(--primaryColor);
 }
 .skills-list{
   margin-top: 10px;
