@@ -5,12 +5,15 @@
 
 .project img {
   border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
+  max-height: 140px;
+  object-position: top;
 }
 
 .project-title {
   text-align: center;
+  padding: 10px;
 }
 
 .projects-container {
@@ -19,6 +22,49 @@
 
 .projects-list {
   margin: 10px 0 10px 0;
+}
+
+.img-container {
+  position: relative;
+  overflow: auto;
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  border-radius: 10px;
+}
+
+.overlay-content {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  height: 100%;
+}
+
+.overlay-content p {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 7px;
+}
+
+.project:hover .overlay {
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.6);
+  top: 0;
+  display: block;
+}
+.project:hover img{  
+  object-fit: contain;
 }
 
 @media (min-width:662px) and (max-width:1200px) {
@@ -32,20 +78,20 @@
   }
   .projects-list {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     margin: 10px 0 10px 0;
   }
   .project img {
     border-radius: 5px;
     width: 100%;
-    object-fit: contain;
+    max-height: 150px;
   }
 }
 
 @media (min-width:1201px) {
   .projects-list {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 10px 0 10px 0;
   }
   .project {
@@ -56,6 +102,22 @@
   .project img {
     border-radius: 5px;
     width: 100%;
-    object-fit: contain;
+    max-height: 185px;
+  }
+  .project:hover img {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .project:hover h4 {
+    opacity: 0.;
+    transition: opacity 0.2s;
+  }
+}
+
+@media (min-width:1800px) {
+  .project img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 306px;
   }
 }

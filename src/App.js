@@ -4,6 +4,7 @@ import './styles/AboutMe.css'
 import './styles/Skills.css'
 import './styles/Projects.css'
 import './styles/Footer.css'
+import './styles/CommonStyle.css'
 import { NavBar } from './components/Header/NavBar';
 import React from 'react';
 import { AboutMe } from './components/Content/AboutMe';

@@ -1,0 +1,28 @@
+/* BUTTON */
+
+.common-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  background-color: rgb(207, 179, 179,0.7);
+  color: black;
+  text-decoration: none;
+  width: 100px;
+  padding: 5px;
+  border-radius: 7px;
+  margin: 5px 5px;
+}
+
+@media (min-width: 530px) {
+  .common-button{
+    width: 120px;
+  }
+}
+
+.common-button:hover {
+  transition: box-shadow 0.2s;
+  background-color: rgb(207, 179, 179,0.4);
+  box-shadow: 2px 2px rgb(70, 52, 52, 0.5);
+}
+
+/* ____________ */

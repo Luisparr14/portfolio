@@ -65,6 +65,12 @@ ul li a {
     display: none;
 }
 
+ul li a:hover {
+    color: rgb(128, 126, 66);
+}
+
+
+
 @media (max-width:530px) {
     #collapse-button {
         font-size: 25px;

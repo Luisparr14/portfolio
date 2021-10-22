@@ -1,30 +1,21 @@
 import { Project } from './Project'
-import EasyTask from '../../assets/projects images/easy tasks.png'
+import EasyTask from '../../assets/projects images/Easy Tasks/easy tasks.png'
+import TimeKidsHome from '../../assets/projects images/Time Kids/Home Page.png'
 const projects = [
   {
     name: 'Easy Tasks',
     image: EasyTask,
+    description:'Es una aplicación de tareas hecha con React js y Node js',
     repo: 'https://github.com/Luisparr14/tasks',
     uri: 'https://easy-tasks-20217.firebaseapp.com/'
   },
   {
-    name: 'Easy Tasks',
-    image: EasyTask,
-    repo: 'https://github.com/Luisparr14/tasks',
-    uri: 'https://easy-tasks-20217.firebaseapp.com/'
+    name: 'Time Kids',
+    image: TimeKidsHome,
+    description:'App interactiva para que los niños aprendan y jueguen',
+    repo: 'https://github.com/Luisparr14/Time-Kids',
+    uri: ''
   },
-  {
-    name: 'Easy Tasks',
-    image: EasyTask,
-    repo: 'https://github.com/Luisparr14/tasks',
-    uri: 'https://easy-tasks-20217.firebaseapp.com/'
-  },
-  {
-    name: 'Easy Tasks',
-    image: EasyTask,
-    repo: 'https://github.com/Luisparr14/tasks',
-    uri: 'https://easy-tasks-20217.firebaseapp.com/'
-  }
 ]
 
 export const Projects = () => (
@@ -36,8 +27,10 @@ export const Projects = () => (
           return <Project
             key={i}
             title={proj.name}
+            description={proj.description}
             image={proj.image}
-            uri={proj.repo}
+            uri={proj.uri}
+            repo={proj.repo}
           />
         })
       }
