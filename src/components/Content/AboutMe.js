@@ -5,7 +5,11 @@ export const AboutMe = () => {
       <h2 id="aboutme" className="sub-title">About me</h2>
       <div className="content-about">
         <img alt="profile" src={profile} />
-        <p>Amet minim mollit non deserun t ullamco est sit aliqua dolor do amet sint. Velit officia conseq</p>
+        <p>Mi nombre es Luis Angel, soy una persona seria cuando se trata de trabajo y a la vez puedo ser
+          alguien que tiene buenas relaciones con las personas que le rodean, me gusta mucho la tecnología y
+          la programación, tambien me gusta mucho el deporte de vez en cuando juego futbol.
+          No te arrepentiras si trabajas conmigo.
+        </p>
       </div>
     </div>
   )
