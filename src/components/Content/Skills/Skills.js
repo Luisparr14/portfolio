@@ -1,12 +1,12 @@
 import { Skill } from './Skill';
-import css3 from '../../assets/logos/Skills/css3.png';
-import html from '../../assets/logos/Skills/html.png';
-import git from '../../assets/logos/Skills/git.png';
-import JavaScript from '../../assets/logos/Skills/JavaScript.png';
-import ReactLogo from '../../assets/logos/Skills/React.png';
-import Node from '../../assets/logos/Skills/Node.png';
-import MySQL from '../../assets/logos/Skills/MySQL.png';
-import Java from '../../assets/logos/Skills/Java.png';
+import css3 from '../../../assets/logos/Skills/css3.png';
+import html from '../../../assets/logos/Skills/html.png';
+import git from '../../../assets/logos/Skills/git.png';
+import JavaScript from '../../../assets/logos/Skills/JavaScript.png';
+import ReactLogo from '../../../assets/logos/Skills/React.png';
+import Node from '../../../assets/logos/Skills/Node.png';
+import MySQL from '../../../assets/logos/Skills/MySQL.png';
+import Java from '../../../assets/logos/Skills/Java.png';
 import React from 'react';
 
 const skills = [

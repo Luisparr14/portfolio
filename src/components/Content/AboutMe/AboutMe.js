@@ -1,4 +1,4 @@
-import profile from '../../assets/images/Profile picture.jpg'
+import profile from '../../../assets/images/Profile picture.jpg'
 export const AboutMe = () => {
   return (
     <div className="about-me">

@@ -20,7 +20,7 @@
   background-color: var(--primaryColor);
 }
 
-.projects-list {
+.projects-list-desktop {
   margin: 10px 0 10px 0;
 }
 
@@ -76,7 +76,7 @@
   .project-title {
     text-align: center;
   }
-  .projects-list {
+  .projects-list-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px 0 10px 0;
@@ -89,7 +89,7 @@
 }
 
 @media (min-width:1201px) {
-  .projects-list {
+  .projects-list-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px 0 10px 0;

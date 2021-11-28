@@ -1,9 +1,9 @@
 import React from 'react';
 import { SocialMedias } from './SocialMedias';
-import GitHub from '../../assets/logos/social medias/GitHub.png'
-import Telegram from '../../assets/logos/social medias/Telegram.png'
-import Instagram from '../../assets/logos/social medias/Instagram.png'
-import LinkedIn from '../../assets/logos/social medias/Linkedin.png'
+import GitHub from '../../../assets/logos/social medias/GitHub.png'
+import Telegram from '../../../assets/logos/social medias/Telegram.png'
+import Instagram from '../../../assets/logos/social medias/Instagram.png'
+import LinkedIn from '../../../assets/logos/social medias/Linkedin.png'
 const socialMediasData = [
   {
     id: 1,

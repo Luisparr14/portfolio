@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../Commons/Button';
+import { Button } from '../../Commons/Button';
 
 export const Project = ({ image, title, uri, description, repo }) => (
   <React.Fragment>
