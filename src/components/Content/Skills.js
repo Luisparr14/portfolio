@@ -55,7 +55,7 @@ const skills = [
 export const Skills = () => (
   <React.Fragment>
     <div className="skills-container">
-      <h2 id="skills" className="sub-title">Skills</h2>
+      <h2 id="skills" className="sub-title">Habilidades</h2>
       <div className="skills-list">
         {
           skills.map((skill) => {

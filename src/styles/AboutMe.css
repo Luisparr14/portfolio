@@ -14,7 +14,7 @@
   margin: auto;
   width: 90%;
   text-align: left;
-  font-size: 24px;
+  font-size: smaller;
   line-height: 28px;
   color: #000000;
 }
@@ -44,10 +44,14 @@
   }
   .content-about p {
     padding: 10px;
+    font-size: medium;
   }
 }
 
 @media (min-width:769px) {
+  .about-me {
+    height: 94vh;
+  }
   .content-about {
     display: flex;
     flex-direction: row;
@@ -63,5 +67,6 @@
   .content-about p {
     display: inline-block;
     padding: 0 30px;
+    font-size: large;
   }
 }

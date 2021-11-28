@@ -20,7 +20,7 @@ const projects = [
 
 export const Projects = () => (
   <div className="projects-container">
-    <h2 id="projects" className="sub-title">Projects</h2>
+    <h2 id="projects" className="sub-title">Proyectos</h2>
     <div className="projects-list">
       {
         projects.map((proj, i) => {

@@ -1,7 +1,8 @@
 .footer {
-  height: 150px;
+  height: 20vh;
   width: 100%;
-  padding: 20px;
+  height: 30vh;
+  padding: 30px;
 }
 
 .social-medias {
@@ -29,8 +30,13 @@
     height: 100%;
     align-items: center;
     justify-content: space-around;
-    width: 40%;
+    width: 80%;
     margin: auto;
+  }
+
+  .social-medias img {
+    width: 50px;
+    height: auto;
   }
 
 }

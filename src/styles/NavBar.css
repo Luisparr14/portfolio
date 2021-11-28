@@ -13,7 +13,7 @@ body {
     backdrop-filter: blur(3px);
     height: 50px;
     width: 100%;
-    z-index: 100000;
+    z-index: 10000;
 }
 .expand-nav {
     display: block;
@@ -26,11 +26,10 @@ body {
 }
 
 label.logo {
-    margin-left: 5px;
+    margin-left: 15px;
     color: #000000;
     font-size: 24px;
-    font-family: Roboto;
-    font-style: normal;
+    font-weight: bold;
     line-height: 50px;
 }
 
@@ -39,12 +38,10 @@ label.logo {
 }
 
 ul {
-    /* left: 200%; */
     background-color: var(--primaryColor);
     opacity: 1;
     float: right;
     flex-direction: column;
-    text-transform: uppercase;
     z-index: 200000;
 }
 
@@ -92,14 +89,12 @@ ul li a:hover {
         transition: 0.2s;
     }
     ul {
-        background-color: var(--primaryColor);
         position: fixed;
         top: 0;
         left: 100%;
         width: 50%;
         height: 100vh;
         text-align: center;
-        text-transform: uppercase;
         transition: 0.2s;
     }
     ul li {
@@ -107,5 +102,20 @@ ul li a:hover {
         margin: 20px 0;
         line-height: 30px;
     }
+    ul li a {
+        color: #000;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
     
+}
+
+@media (min-width:769px){
+    ul li a {
+        color: #000;
+        font-size: 20px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
 }

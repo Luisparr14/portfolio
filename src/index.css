@@ -26,9 +26,13 @@ code {
 }
 
 .sub-title {
-  text-align: center;
+  display: flex;
+  height: 90px;
+  align-items: flex-end;
+  justify-content: center;
   padding: 5px;
   width: 100%;
+  font-size: 30px;
 }
 
 @media (max-width:530px) {
