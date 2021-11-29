@@ -1,13 +1,32 @@
-.project {
+.project-desktop{
   margin: auto;
   width: 80%;
 }
+.project-mobile{
+  margin: 10px 10px;
+  width: 45%;
+}
 
-.project img {
+.projects-list-mobile{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  justify-content: center;
+}
+
+.project-desktop img {
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   max-height: 140px;
+  object-position: top;
+}
+
+.project-mobile img{
+  border-radius: 10px;
+  object-fit: contain;
+  width: 60%;
+  max-height: 100%;
   object-position: top;
 }
 
@@ -20,20 +39,22 @@
   background-color: var(--primaryColor);
 }
 
-.projects-list-desktop {
+.projects-list-desktop, .project-list-mobile {
   margin: 10px 0 10px 0;
 }
 
 .img-container {
+  display: flex;
+  justify-content: center;
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /* Overlay */
 
 .overlay {
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 100%;
   top: 0;
   display: none;
@@ -57,67 +78,64 @@
   padding: 7px;
 }
 
-.project:hover .overlay {
+.project-desktop:hover .overlay, .project-mobile:hover .overlay {
+  transition: 1s;
   position: absolute;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: transparent;
   top: 0;
   display: block;
 }
-.project:hover img{  
-  object-fit: contain;
+.img-container:hover .image-project, .img-container:hover .image-project{
+  transition: 0.7s;
+  filter: blur(3px);
 }
+/* .project-desktop:hover img,.project-mobile:hover img{  
+  object-fit: contain;
+} */
 
-@media (min-width:662px) and (max-width:1200px) {
-  .project {
-    margin: 15px auto;
-    width: 80%;
-    height: auto;
-  }
-  .project-title {
-    text-align: center;
-  }
+@media (min-width:502px) and (max-width:1200px) {
+  
   .projects-list-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px 0 10px 0;
   }
-  .project img {
-    border-radius: 5px;
-    width: 100%;
-    max-height: 150px;
+  .project-desktop img {
+    max-height: 300px;
+  }
+  .project-mobile img {
+    max-height: 600px;
   }
 }
 
 @media (min-width:1201px) {
   .projects-list-desktop {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 10px 0 10px 0;
   }
-  .project {
+  /* .project-desktop {
     margin: 15px auto;
     width: 80%;
     height: auto;
+  } */
+  .project-desktop img {
+    max-height: 300px;
   }
-  .project img {
-    border-radius: 5px;
-    width: 100%;
-    max-height: 185px;
+  .project-mobile img {
+    max-height: 700px;
   }
-  .project:hover img {
-    opacity: 0.5;
-    transition: opacity 0.2s;
-  }
-  .project:hover h4 {
+  .project-desktop h4 {
     opacity: 0.;
     transition: opacity 0.2s;
   }
 }
 
 @media (min-width:1800px) {
-  .project img {
-    border-radius: 5px;
-    width: 100%;
+  .project-desktop img {
     max-height: 306px;
+  }
+  .project-mobile img {
+    max-height: 800px;
   }
 }
