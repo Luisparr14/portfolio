@@ -53,7 +53,7 @@
 
 .overlay {
   position: absolute;
-  width: 90%;
+  width: 60%;
   height: 100%;
   top: 0;
   display: none;
@@ -74,10 +74,16 @@
 .overlay-content p {
   color: #FFFFFF;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 13px;
   padding: 7px;
+  text-align: center;
 }
-.buttons-mobile{
+
+.buttons-desktop a {
+  font-size: 12px;
+}
+
+.buttons-mobile {
   display: flex;
   flex-direction: column;
 }
@@ -93,16 +99,28 @@
 }
 
 .project-desktop:hover .image-project, .project-mobile:hover .image-project {
-  transition: 0.7s;
+  transition: filter 0.7s;
   filter: blur(3px) contrast(0.5) brightness(0.5);
 }
 
 /* .project-desktop:hover img,.project-mobile:hover img{  
   object-fit: contain;
 } */
+@media (min-width:504px) and (max-width:610px) {
+  .overlay-content p {
+    font-size: 9px;
+  }
+  .buttons-desktop a {
+    font-size: 9px;
+  }
+}
+@media (min-width:801px) and (max-width:1200px) {
+  .buttons-desktop a {
+    font-size: 14px;
+  }
+}
 
 @media (min-width:502px) and (max-width:1200px) {
-
   .projects-list-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,6 +139,10 @@
 @media (min-width:1201px) {
   .project-mobile {
     width: 29%;
+  }
+
+  .overlay-content p {
+    font-size: 18px;
   }
 
   .projects-list-desktop {
@@ -146,12 +168,16 @@
     opacity: 0.;
     transition: opacity 0.2s;
   }
+  .buttons-desktop a {
+    font-size: 19px;
+  }
 }
 
 @media (min-width:1800px) {
   .project-mobile {
     width: 29%;
   }
+
   .project-desktop img {
     max-height: 306px;
   }
