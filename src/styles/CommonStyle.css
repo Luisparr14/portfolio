@@ -1,10 +1,9 @@
 /* BUTTON */
 
 .common-button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
   text-align: center;
-  background-color: rgb(207, 179, 179,0.7);
+  background-color: rgb(230, 194, 141);
   color: black;
   text-decoration: none;
   width: 100px;
@@ -20,9 +19,9 @@
 }
 
 .common-button:hover {
-  transition: box-shadow 0.2s;
-  background-color: rgb(207, 179, 179,0.4);
-  box-shadow: 2px 2px rgb(70, 52, 52, 0.5);
+  transition: box-shadow 0.2s, background-color 0.4s;
+  background-color: rgb(114, 77, 42);
+  box-shadow: 2.4px 5px rgba(17, 16, 16, 0.295);
 }
 
 /* ____________ */

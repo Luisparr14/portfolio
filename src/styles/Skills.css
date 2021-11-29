@@ -16,6 +16,8 @@
 }
 
 .skills-container {
+  display: flex;
+  flex-direction: column;
   background-color: var(--primaryColor);
 }
 
@@ -40,17 +42,20 @@
 }
 
 @media (min-width:1000px) {
-  .navbar{
-    padding: 0 120px;
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 30px 0;
   }
   .skills-list {
+    display: grid;
     height: 100%;
     margin-top: 10px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
   .skills-container{
-    height: 70vh;
+    height: 100%;
   }
   .skill img {
     height: 85px;

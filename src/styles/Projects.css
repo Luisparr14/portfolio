@@ -72,10 +72,17 @@
 }
 
 .overlay-content p {
+  color: #FFFFFF;
   border-radius: 10px;
   font-size: 18px;
   padding: 7px;
 }
+.buttons-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+/* FIN OVERLAY */
 
 .project-desktop:hover .overlay, .project-mobile:hover .overlay {
   transition: 1s;
@@ -87,7 +94,7 @@
 
 .project-desktop:hover .image-project, .project-mobile:hover .image-project {
   transition: 0.7s;
-  filter: blur(3px);
+  filter: blur(3px) contrast(0.5) brightness(0.5);
 }
 
 /* .project-desktop:hover img,.project-mobile:hover img{  

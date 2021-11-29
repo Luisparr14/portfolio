@@ -10,9 +10,9 @@ export const Project = ({ image, title, uri, description, repo, typeProject }) =
         <div className="overlay">
           <div className="overlay-content">
             <p>{description}</p>
-            <footer>
+            <footer className={`buttons-${typeProject}`}>
               {uri && <Button url={uri} text="View page" />}
-              <Button url={repo} text="View repo" />
+              {repo && <Button url={repo} text="View repo" />}
             </footer>
           </div>
         </div>
