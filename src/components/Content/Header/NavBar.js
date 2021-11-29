@@ -10,19 +10,19 @@ export const NavBar = () => {
           <label id="collapse-button" className="navbar-toggler" type="button">
             <i class="fas fa-bars"></i>
           </label>
-          <ul className="expand-nav">
+          <ul className="nav-items">
             <li><a href="#aboutme">Sobre mi</a></li>
             <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            {/* <li><a href="#contact">Contact</a></li> Por insertar */}
+            <li><a href="#projects-desktop">Proyectos</a></li>
+            <li><a href="#contact">Contactame</a></li>
           </ul>
         </div>
       </nav>
-      <ul id="collapseNav" className="collapse-nav">
+      <ul id="collapseNav" className="nav-items-collapse">
         <li><a href="#aboutme">Sobre mi</a></li>
         <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        {/* <li><a href="#contact">Contact</a></li> Por insertar */}
+        <li><a href="#projects-desktop">Proyectos</a></li>
+        <li><a href="#contact">Contactame</a></li>
       </ul>
     </React.Fragment>
   )

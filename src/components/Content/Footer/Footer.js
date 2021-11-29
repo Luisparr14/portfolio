@@ -33,6 +33,7 @@ const socialMediasData = [
 
 export const Footer = () => (
   <div className="footer">
+    <h2 id="contact" className="sub-title">Contacto</h2>
     <div className="social-medias">
       {
         socialMediasData.map((social) => {

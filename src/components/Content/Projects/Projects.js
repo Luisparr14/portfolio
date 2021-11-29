@@ -1,6 +1,6 @@
 import { ProjectRender } from './ProjectsRender'
-import EasyTask from '../../../assets/projects images/Easy Tasks/easy tasks.png'
-import TimeKidsHome from '../../../assets/projects images/Time Kids/Home Page.png'
+import EasyTask from '../../../assets/projects images/Easy Tasks/easy tasks.webp'
+import TimeKidsHome from '../../../assets/projects images/Time Kids/Home Page.webp'
 import Restauranked from '../../../assets/projects images/Restauranked/Home Page.webp'
 import Compromisos from '../../../assets/projects images/Compromisos/Home Page.webp'
 

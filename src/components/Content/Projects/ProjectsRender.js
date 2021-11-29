@@ -1,7 +1,7 @@
 import { Project } from './Project'
 export const ProjectRender = ({ projectsData, sectionName, nameClass }) => (
   <>
-    <h2 id="projects" className="sub-title">{sectionName}</h2>
+    <h2 id={`projects-${nameClass}`} className="sub-title">{sectionName}</h2>
     <div className={`projects-list-${nameClass}`}>
       {
         projectsData.map((proj) => {
