@@ -6,6 +6,7 @@ window.onload = () => {
 
   function toogleCollapse() {
     collapsenav.classList.toggle('no-collapse')
+    btn.classList.toggle('collapse-button-active');
     content.classList.toggle('blur')
   }
 

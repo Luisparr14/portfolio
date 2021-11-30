@@ -8,7 +8,7 @@ export const NavBar = () => {
         <div className="navbar-nav">
           <label className="logo">Luis Angel</label>
           <label id="collapse-button" className="navbar-toggler" type="button">
-            <i class="fas fa-bars"></i>
+            <span></span>
           </label>
           <ul className="nav-items">
             <li><a href="#aboutme">Sobre mi</a></li>
