@@ -1,7 +1,7 @@
 import profile from '../../../assets/images/Profile picture.webp'
 export const AboutMe = () => {
   return (
-    <div className="about-me">
+    <div className="about-me section">
       <h2 id="aboutme" className="sub-title">Sobre mi</h2>
       <div className="content-about">
         <img alt="profile" src={profile} />

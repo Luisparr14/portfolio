@@ -3,6 +3,7 @@ import EasyTask from '../../../assets/projects images/Easy Tasks/easy tasks.webp
 import TimeKidsHome from '../../../assets/projects images/Time Kids/Home Page.webp'
 import Restauranked from '../../../assets/projects images/Restauranked/Home Page.webp'
 import Compromisos from '../../../assets/projects images/Compromisos/Home Page.webp'
+import CheckInWork from '../../../assets/projects images/Check In Work/ListadoRegistros.jfif'
 
 const projectsDesktop = [
   {
@@ -36,10 +37,17 @@ const projectsMobile = [
     repo: 'https://github.com/Luisparr14/Restauranked',
     uri: ''
   },
+  {
+    name: 'Check In Work',
+    image: CheckInWork,
+    description: 'Administra la hora de llegada de tus empleados',
+    repo: 'hhttps://github.com/Luisparr14/check-in-work-app',
+    uri: ''
+  },
 ]
 
 export const Projects = () => (
-  <div className="projects-container">
+  <div className="projects-container section">
     <ProjectRender projectsData={projectsDesktop} nameClass="desktop" sectionName="Proyectos para escritorio" />
     <ProjectRender projectsData={projectsMobile} nameClass="mobile" sectionName="Proyectos para moviles" />
   </div>

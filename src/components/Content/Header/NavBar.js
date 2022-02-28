@@ -11,10 +11,10 @@ export const NavBar = () => {
             <span></span>
           </label>
           <ul className="nav-items">
-            <li><a href="#aboutme">Sobre mi</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects-desktop">Proyectos</a></li>
-            <li><a href="#contact">Contactame</a></li>
+            <li><a className="nav-link" href="#aboutme">Sobre mi</a></li>
+            <li><a className="nav-link" href="#skills">Habilidades</a></li>
+            <li><a className="nav-link" href="#projects-desktop">Proyectos</a></li>
+            <li><a className="nav-link" href="#contact">Contactame</a></li>
           </ul>
         </div>
       </nav>

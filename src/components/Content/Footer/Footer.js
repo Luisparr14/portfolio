@@ -32,7 +32,7 @@ const socialMediasData = [
 ]
 
 export const Footer = () => (
-  <div className="footer">
+  <div className="footer section">
     <h2 id="contact" className="sub-title">Contacto</h2>
     <div className="social-medias">
       {

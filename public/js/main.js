@@ -26,5 +26,19 @@ window.onload = () => {
     })
   }
 
+  // Scroll to top  
+  let linknavbar = document.querySelectorAll('.nav-link');
+  let section = document.querySelectorAll('.section');
 
+  function ChangeLinkState() {
+    let index = section.length;
+    while (--index && window.scrollY + 50 < section[index].offsetTop) { }
+    linknavbar.forEach(link => {
+      link.classList.remove('active');
+    });
+    linknavbar[index].classList.add('active');
+
+  }
+  ChangeLinkState();
+  window.addEventListener('scroll', ChangeLinkState);
 }

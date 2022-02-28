@@ -90,15 +90,12 @@
 
 /* FIN OVERLAY */
 
-.project-desktop:hover .overlay, .project-mobile:hover .overlay {
-  transition: 1s;
-  position: absolute;
+.img-container:hover .overlay {
   background-color: transparent;
-  top: 0;
   display: block;
 }
 
-.project-desktop:hover .image-project, .project-mobile:hover .image-project {
+.img-container:hover .image-project {
   transition: filter 0.7s;
   filter: blur(3px) contrast(0.5) brightness(0.5);
 }
