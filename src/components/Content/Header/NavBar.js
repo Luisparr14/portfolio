@@ -4,9 +4,13 @@ export const NavBar = () => {
 
   return (
     <React.Fragment>
-      <nav class="navbar">
+      <nav className="navbar">
         <div className="navbar-nav">
-          <label className="logo">Luis Angel</label>
+          <label className="logo">
+            <a href="#aboutme" className="nav-link">
+              Luis Angel
+            </a>
+          </label>
           <label id="collapse-button" className="navbar-toggler" type="button">
             <span></span>
           </label>

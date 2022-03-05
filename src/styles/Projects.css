@@ -16,6 +16,9 @@
 }
 
 .project-desktop img {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #aaa;
   border-radius: 10px;
   object-fit: contain;
   width: 100%;
@@ -24,6 +27,9 @@
 }
 
 .project-mobile img {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #aaa;
   border-radius: 10px;
   object-fit: contain;
   width: 100%;

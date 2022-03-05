@@ -2,13 +2,17 @@ body {
     font-family: Roboto;
     background-color: var(--primaryColor)
 }
+.logo a, .logo a:visited,.logo a:active {
+    text-decoration: none;
+    color: #000
+}
 
 .navbar {
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: var(--primaryColor) 0.6;
+    background-color:rgba(13, 223, 118, 0.918);
     backdrop-filter: blur(3px);
     height: 50px;
     width: 100%;
@@ -29,7 +33,7 @@ body {
 label.logo {
     margin-left: 15px;
     color: #000000;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 50px;
 }
@@ -53,7 +57,7 @@ label.logo {
     background-color: #000000;
     height: 3px;
     align-self: center;
-    transition: transform 0.3s ease-in-out;
+    transition: background-color 1s ease-in;
 }
 .navbar-toggler span::before{
     content: "";
@@ -81,6 +85,7 @@ label.logo {
 
 .collapse-button-active span{
     background-color:transparent;
+    transition: background-color 0.1s ease-in;
 }
 .collapse-button-active span::before{
     transform: rotate(-46deg);
@@ -91,6 +96,9 @@ label.logo {
 .nav-items {
     display: none;
 }
+ul.nav-items li {
+    margin: 0 2px
+}
 ul.nav-items-collapse {
     display: block;
     position: fixed;
@@ -100,11 +108,11 @@ ul.nav-items-collapse {
     height: 100vh;
     text-align: center;
     transition: 0.2s;
-    background-color: var(--primaryColor);
+    background-color: rgba(13, 223, 118, 1);;
     opacity: 1;
     float: right;
     flex-direction: column;
-    z-index: 200000;
+    z-index: 3000;
 }
 
 ul.nav-items-collapse li {
@@ -135,7 +143,7 @@ ul li a:hover, a.active {
 
 @media (min-width:657px) {
     label.logo {
-        margin-left: 20px;
+        margin-left: 33px;
     }
     #collapse-button {
         display: none;
