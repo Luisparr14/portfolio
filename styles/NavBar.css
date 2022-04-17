@@ -102,6 +102,8 @@ ul.nav-items li {
 ul.nav-items-collapse {
   display: block;
   position: fixed;
+  margin: 0;
+  padding: 0;
   top: 50px;
   left: 100%;
   width: 100%;
@@ -149,18 +151,21 @@ ul li a:hover, a.active {
       display: none;
   }
   .nav-items {
-      display: block;
+      display: flex;
+      margin: 0;
+      align-items: center;
+      flex-direction: row;
       background-color: var(--primaryColor) 0.6;
   }
   .nav-items-collapse {
       display: none;
   }
-  ul.nav-items {
+  /* ul.nav-items {
       opacity: 1;
       float: right;
       flex-direction: column;
       z-index: 200;
-  }
+  } */
   
   ul.nav-items li {
       display: inline-block;
