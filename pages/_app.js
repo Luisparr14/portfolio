@@ -10,7 +10,6 @@ import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"/>
       <Script defer src='/js/navbar.js'/>
       <Head>
         <title>Luis Angel - Portfolio</title>
