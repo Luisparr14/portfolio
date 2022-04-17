@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-  position: sticky;
+  position: sticky;  
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -143,7 +143,7 @@ ul li a:hover, a.active {
   color: #fff;
 }
 
-@media (min-width:657px) {
+@media (min-width:770px) {
   label.logo {
       margin-left: 33px;
   }
@@ -180,9 +180,9 @@ ul li a:hover, a.active {
   }
 }
 
-@media (min-width:800px) {
+@media (min-width:844px) {
   label.logo {
-      margin-left: 100px;
+      margin-left: 80px;
   }
   ul li a {
       color: #000;

@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
-      <Script src='/js/main.js'/>
+      <Script defer src='/js/main.js'/>
       <Component {...pageProps} />
     </>
   )
