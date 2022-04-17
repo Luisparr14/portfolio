@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#aboutme, #contact, #projects, #skills {
+  height: 50px;
+}

@@ -9,8 +9,9 @@ import '../styles/Footer.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
-      <Script defer src='/js/main.js'/>
+      <Script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"/>
+      <Script defer src='/js/NavBar.js'/>
+      <Script src='/js/projects.js' />
       <Component {...pageProps} />
     </>
   )

@@ -1,3 +1,6 @@
+h4{
+  margin:10px 0 ;
+}
 .project-desktop {
   margin: auto;
   width: 80%;
@@ -20,10 +23,6 @@
   border-style: dotted;
   border-color: #aaa;
   border-radius: 10px;
-  object-fit: contain;
-  width: 100%;
-  max-height: 140px;
-  object-position: top;
 }
 
 .project-mobile img {
@@ -31,9 +30,6 @@
   border-style: dotted;
   border-color: #aaa;
   border-radius: 10px;
-  object-fit: contain;
-  width: 100%;
-  object-position: top;
 }
 
 .project-title {
@@ -59,18 +55,18 @@
 
 .overlay {
   position: absolute;
-  width: 60%;
   height: 100%;
   top: 0;
   display: none;
   border-radius: 10px;
+  padding: 10%;
 }
 
 .overlay-content {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
   font-size: 20px;
   position: relative;
@@ -98,7 +94,8 @@
 
 .img-container:hover .overlay {
   background-color: transparent;
-  display: block;
+  display: flex;
+  height: 100%;
 }
 
 .img-container:hover .image-project {

@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export const AboutMe = () => {
   return (
-    <section id="aboutme" className="about-me section">
+    <section className="about-me section">
+      <div id="aboutme"></div>    
       <h2 className="sub-title">Sobre mi</h2>
       <div className="content-about">
-        {/* <img className='profile' loading='lazy' alt="profile" src='/images/Profile picture.webp'/> */}
           <Image
             src={`/images/Profile picture.webp`}
             alt="profile"

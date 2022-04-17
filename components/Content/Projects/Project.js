@@ -1,12 +1,17 @@
+import Image from 'next/image';
 import React from 'react';
 import { Button } from '../../Commons/Button';
 
 export const Project = ({ image, title, uri, description, repo, typeProject }) => (
-  <React.Fragment>
-    <div className={`project-${typeProject}`}>
+  <>
+    <div className={`project-${typeProject}`}>    
       <h4 className="project-title">{title}</h4>
       <div className="img-container">
-        <img alt={title} src={image} className="image-project" />
+        {typeProject === 'desktop' ? (
+          <Image src={image} alt={title} className="image-project" style={{zIndex: 0}} width={600} height={400} objectFit="contain" />
+        ): (
+          <Image src={image} alt={title} className="image-project" style={{zIndex: 0}} width={400} height={700} objectFit="contain" />
+        )}
         <div className="overlay">
           <div className="overlay-content">
             <p>{description}</p>
@@ -18,5 +23,5 @@ export const Project = ({ image, title, uri, description, repo, typeProject }) =
         </div>
       </div>
     </div>
-  </React.Fragment>
+  </>
 )

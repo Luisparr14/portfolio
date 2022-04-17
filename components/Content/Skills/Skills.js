@@ -3,7 +3,8 @@ import React from 'react';
 
 export const Skills = ({ skills = [] }) => (
   <React.Fragment>
-    <section id="skills" className="skills-container section">
+    <section className="skills-container section">
+      <div id="skills"></div>
       <h2 className="sub-title">Habilidades</h2>
       <div className="skills-list">
         {

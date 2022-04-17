@@ -3,7 +3,8 @@ import { SocialMedias } from './SocialMedias';
 export const Footer = ({ data = [] }) => {
   return (
     <footer className="footer section">
-      <h2 id="contact" className="sub-title">Contacto</h2>
+      <div id="contact"></div>
+      <h2 className="sub-title">Contacto</h2>
       <div className="social-medias">
         {
           data.map((social) => {
