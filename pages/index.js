@@ -4,6 +4,7 @@ import { AboutMe } from '../components/Content/AboutMe/AboutMe'
 import { NavBar } from '../components/Content/Header/Navbar'
 import { Skills } from '../components/Content/Skills/Skills'
 import { Projects } from '../components/Content/Projects/Projects'
+import { Footer } from '../components/Content/Footer/Footer'
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
         <AboutMe />
         <Skills />
         <Projects />
+        <Footer />
       </div>
     </>
   )

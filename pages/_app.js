@@ -5,6 +5,7 @@ import '../styles/NavBar.css';
 import '../styles/AboutMe.css';
 import '../styles/Skills.css';
 import '../styles/Projects.css';
+import '../styles/Footer.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>
